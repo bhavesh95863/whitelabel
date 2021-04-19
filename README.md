@@ -11,3 +11,5 @@ This app will do following
 
 Note:
 You need to upload your logo at /public/images
+
+If any issue or suggestion do write in issue list we will resolve that.
