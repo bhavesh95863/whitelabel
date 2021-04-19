@@ -17,7 +17,7 @@ app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/whitelabel/css/whitelabel_app.css"
-# app_include_js = "/assets/whitelabel/js/whitelabel.js"
+app_include_js = "/assets/whitelabel/js/whitelabel.js"
 
 # include js, css files in header of web template
 web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
@@ -115,6 +115,7 @@ after_migrate = ['whitelabel.api.whitelabel_patch']
 # 	]
 # }
 
+boot_session = "whitelabel.api.boot_session"
 # Testing
 # -------
 
