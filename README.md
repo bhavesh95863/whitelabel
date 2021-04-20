@@ -9,7 +9,7 @@ This app will do following
 6. remove welcome page
 7. update welcome blog post
 8. App logo size adjust from whitelabel setting page
-9. Update onboard steps and remove video and documentation link(Version13)
+9. Update onboard steps for remove video and documentation link(Version13)
 
 Note:
 You need to upload your logo at /public/images
