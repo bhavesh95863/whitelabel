@@ -10,10 +10,37 @@ def whitelabel_patch():
 	if frappe.db.exists("Blog Post", "Welcome"):
 		frappe.db.set_value("Blog Post","Welcome","content","")
 	update_field_label()
+	if cint(get_frappe_version()) >= 13:
+		update_onboard_details()
+
 
 def update_field_label():
 	"""Update label of section break in employee doctype"""
 	frappe.db.sql("""Update `tabDocField` set label='ERP' where fieldname='erpnext_user' and parent='Employee'""")
+
+def get_frappe_version():
+	return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
+
+def update_onboard_details():
+	update_onboard_module()
+	update_onborad_steps()
+
+def update_onboard_module():
+	onboard_module_details = frappe.get_all("Module Onboarding",filters={},fields=["name"])
+	for row in onboard_module_details:
+		doc = frappe.get_doc("Module Onboarding",row.name)
+		doc.documentation_url = ""
+		doc.flags.ignore_mandatory = True
+		doc.save(ignore_permissions = True)
+
+def update_onborad_steps():
+	onboard_steps_details = frappe.get_all("Onboarding Step",filters={},fields=["name"])
+	for row in onboard_steps_details:
+		doc = frappe.get_doc("Onboarding Step",row.name)
+		doc.intro_video_url = ""
+		doc.description = ""
+		doc.flags.ignore_mandatory = True
+		doc.save(ignore_permissions = True)
 
 def boot_session(bootinfo):
 	"""boot session - send website info if guest"""
