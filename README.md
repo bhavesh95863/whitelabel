@@ -10,6 +10,11 @@ This app will do following
 7. update welcome blog post
 8. App logo size adjust from whitelabel setting page
 9. Update onboard steps for remove video and documentation link(Version13)
+10. Navbar Background color manage from whitelabel setting.
+
+Whitelabel Setting Page
+![image](https://user-images.githubusercontent.com/34086262/115605632-5e28ed00-a300-11eb-986d-5114ef128de3.png)
+
 
 Note:
 You need to upload your logo at /public/images
