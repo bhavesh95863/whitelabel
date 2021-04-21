@@ -1,6 +1,6 @@
 ERPNext Whitelabel
 
-This app will do following
+This app have following features:
 1. Change App logo
 2. Change Favicon
 3. Change Splash Image
