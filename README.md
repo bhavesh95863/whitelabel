@@ -5,13 +5,13 @@ This app have following features:
 2. Change Favicon
 3. Change Splash Image
 4. Hide Help Menu
-5. Hide powered by text from website
+5. Hide powered by text from the website
 6. remove welcome page
 7. update welcome blog post
-8. App logo size adjust from whitelabel setting page
+8. App logo size adjusts from Whitelabel setting page
 9. Update onboard steps for remove video and documentation link(Version13)
-10. Navbar Background color manage from whitelabel setting.
-11. Custom Navbar Title and CSS for title Manage from whitelabel setting.
+10. Navbar Background color manage from Whitelabel setting.
+11. Custom Navbar Title and CSS for title Manage from Whitelabel setting.
 
 Whitelabel Setting Page
 ![image](https://user-images.githubusercontent.com/34086262/115605632-5e28ed00-a300-11eb-986d-5114ef128de3.png)
@@ -20,9 +20,15 @@ Custom Navbar Title
 ![image](https://user-images.githubusercontent.com/34086262/115721516-bc56de00-a39b-11eb-94b3-787b0481fb60.png)
 
 
+Installation Steps:
+1.bench get-app https://github.com/bhavesh95863/whitelabel
+2.bench --site sitename install-app whitelabel
+3.bench migrate
+4.bench restart
+5.bench clear-cache
 
 
 Note:
 You need to upload your logo at /public/images
 
-If any issue or suggestion do write in issue list we will resolve that.
+If any issue or suggestion do write in the issue list we will resolve that.
