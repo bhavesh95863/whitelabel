@@ -20,12 +20,12 @@ Custom Navbar Title
 ![image](https://user-images.githubusercontent.com/34086262/115721516-bc56de00-a39b-11eb-94b3-787b0481fb60.png)
 
 
-Installation Steps:
-1.bench get-app https://github.com/bhavesh95863/whitelabel<br/>
-2.bench --site sitename install-app whitelabel<br/>
-3.bench migrate<br/>
-4.bench restart<br/>
-5.bench clear-cache
+Installation Steps:<br/>
+1. bench get-app https://github.com/bhavesh95863/whitelabel<br/>
+2. bench --site sitename install-app whitelabel<br/>
+3. bench migrate<br/>
+4. bench restart<br/>
+5. bench clear-cache
 
 
 Note:
