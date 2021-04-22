@@ -21,10 +21,10 @@ Custom Navbar Title
 
 
 Installation Steps:
-1.bench get-app https://github.com/bhavesh95863/whitelabel
-2.bench --site sitename install-app whitelabel
-3.bench migrate
-4.bench restart
+1. bench get-app https://github.com/bhavesh95863/whitelabel<br/>
+2.bench --site sitename install-app whitelabel<br/>
+3.bench migrate<br/>
+4.bench restart<br/>
 5.bench clear-cache
 
 
