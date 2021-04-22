@@ -7,9 +7,13 @@
  "field_order": [
   "logo_setting_section",
   "logo_height",
+  "column_break_2",
   "logo_width",
   "navbar_setting_section",
-  "navbar_background_color"
+  "navbar_background_color",
+  "column_break_7",
+  "custom_navbar_title",
+  "custom_navbar_title_style"
  ],
  "fields": [
   {
@@ -39,11 +43,29 @@
    "fieldname": "navbar_background_color",
    "fieldtype": "Data",
    "label": "Navbar Background Color"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_navbar_title",
+   "fieldtype": "Data",
+   "label": "Navbar Title"
+  },
+  {
+   "fieldname": "custom_navbar_title_style",
+   "fieldtype": "Code",
+   "label": "Navbar Title Style"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-04-21 23:26:27.224183",
+ "modified": "2021-04-22 18:42:17.007437",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
