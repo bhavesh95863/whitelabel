@@ -1,6 +1,6 @@
 ERPNext Whitelabel
 
-This app will do following
+This app have following features:
 1. Change App logo
 2. Change Favicon
 3. Change Splash Image
@@ -11,9 +11,15 @@ This app will do following
 8. App logo size adjust from whitelabel setting page
 9. Update onboard steps for remove video and documentation link(Version13)
 10. Navbar Background color manage from whitelabel setting.
+11. Custom Navbar Title and CSS for title Manage from whitelabel setting.
 
 Whitelabel Setting Page
 ![image](https://user-images.githubusercontent.com/34086262/115605632-5e28ed00-a300-11eb-986d-5114ef128de3.png)
+
+Custom Navbar Title
+![image](https://user-images.githubusercontent.com/34086262/115721516-bc56de00-a39b-11eb-94b3-787b0481fb60.png)
+
+
 
 
 Note:
