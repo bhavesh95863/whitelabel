@@ -17,7 +17,8 @@ Whitelabel Setting Page
 ![image](https://user-images.githubusercontent.com/34086262/115605632-5e28ed00-a300-11eb-986d-5114ef128de3.png)
 
 Custom Navbar Title
-![image](https://user-images.githubusercontent.com/34086262/115721027-405c9600-a39b-11eb-9f80-58f2b0608bc8.png)
+![image](https://user-images.githubusercontent.com/34086262/115721516-bc56de00-a39b-11eb-94b3-787b0481fb60.png)
+
 
 
 
