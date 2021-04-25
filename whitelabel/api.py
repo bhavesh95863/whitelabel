@@ -10,7 +10,7 @@ def whitelabel_patch():
 	if frappe.db.exists("Blog Post", "Welcome"):
 		frappe.db.set_value("Blog Post","Welcome","content","")
 	update_field_label()
-	if cint(get_frappe_version()) >= 13:
+	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('Whitelabel Setting', 'ignore_onboard_whitelabel'):
 		update_onboard_details()
 
 
@@ -46,4 +46,4 @@ def boot_session(bootinfo):
 	"""boot session - send website info if guest"""
 	if frappe.session['user']!='Guest':
 
-		bootinfo.app_logo_details = frappe.get_doc("Whitelabel Setting","Whitelabel Setting")
+		bootinfo.whitelabel_setting = frappe.get_doc("Whitelabel Setting","Whitelabel Setting")
