@@ -135,3 +135,7 @@ boot_session = "whitelabel.api.boot_session"
 # 	"Task": "whitelabel.task.get_dashboard_data"
 # }
 
+override_whitelisted_methods = {
+	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
+}
+
