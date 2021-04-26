@@ -1,7 +1,6 @@
 $(window).on('load', function() {
     frappe.after_ajax(function () {
         if (frappe.boot.whitelabel_setting.show_help_menu) {
-            console.log('call')
             // $('.dropdown-help').css('display','block');
             $('.dropdown-help').attr('style', 'display: block !important');
         }
