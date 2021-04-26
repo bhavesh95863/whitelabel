@@ -22,11 +22,11 @@ Custom Navbar Title
 
 Below are important setting in whitelabel setting page.
 1. Ignore Onboard Whitelabel:<br/>
-   If this value set ture then this app will not whitelabel onboarding.
+   If this setting value true then this app will not whitelabel onboarding steps and onboarding modules.
 2. Show help menu:<br/>
    By default this app hide help menu. this setting show help menu if value of this setting true.
 3. Disable New Update Popup:<br/>
-   This setting will disable new updates popup.
+  If this setting value true then it will disable new updates popup.
 
 
 Installation Steps:<br/>
