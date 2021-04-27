@@ -14,7 +14,7 @@ $(window).on('load', function() {
             $('.navbar').css('background-color',frappe.boot.whitelabel_setting.navbar_background_color)
         }
         if (frappe.boot.whitelabel_setting.custom_navbar_title_style && frappe.boot.whitelabel_setting.custom_navbar_title) {
-            $(`<span style=${frappe.boot.whitelabel_setting.custom_navbar_title_style.replace('\n','')} class="hidden-xs hidden-sm">${frappe.boot.app_logo_details.custom_navbar_title}</span>`).insertAfter("#navbar-breadcrumbs")
+            $(`<span style=${frappe.boot.whitelabel_setting.custom_navbar_title_style.replace('\n','')} class="hidden-xs hidden-sm">${frappe.boot.whitelabel_setting.custom_navbar_title}</span>`).insertAfter("#navbar-breadcrumbs")
         }
     })
 })
