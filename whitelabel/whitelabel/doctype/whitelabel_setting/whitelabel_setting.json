@@ -17,6 +17,7 @@
   "logo_width",
   "navbar_setting_section",
   "navbar_background_color",
+  "whitelabel_app_name",
   "column_break_7",
   "custom_navbar_title",
   "custom_navbar_title_style"
@@ -98,11 +99,16 @@
    "fieldname": "disable_new_update_popup",
    "fieldtype": "Check",
    "label": "Disable New Update Popup"
+  },
+  {
+   "fieldname": "whitelabel_app_name",
+   "fieldtype": "Data",
+   "label": "Whitelabel App Name"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-04-25 21:40:54.322040",
+ "modified": "2021-05-05 23:04:05.314897",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
