@@ -12,6 +12,7 @@ This app have following features:
 9. Update onboard steps for remove video and documentation link(Version13)
 10. Navbar Background color manage from Whitelabel setting.
 11. Custom Navbar Title and CSS for title Manage from Whitelabel setting.
+12. Change Login Page Title From Whitelabel Setting Page(https://github.com/bhavesh95863/whitelabel/issues/7)
 
 
 Whitelabel Setting Page
