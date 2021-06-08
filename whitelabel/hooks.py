@@ -138,3 +138,7 @@ boot_session = "whitelabel.api.boot_session"
 override_whitelisted_methods = {
     "frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
 }
+
+fixtures = [
+    'Whitelabel Setting'
+]

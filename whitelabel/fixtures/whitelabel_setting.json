@@ -1,0 +1,20 @@
+[
+ {
+  "custom_navbar_title": null,
+  "custom_navbar_title_style": null,
+  "disable_new_update_popup": 1,
+  "docstatus": 0,
+  "doctype": "Whitelabel Setting",
+  "ignore_onboard_whitelabel": 0,
+  "logo_height": "",
+  "logo_width": "",
+  "modified": "2021-06-08 04:38:56.896553",
+  "name": "Whitelabel Setting",
+  "navbar_background_color": "#08192d",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "show_help_menu": 0,
+  "whitelabel_app_name": "Learn Africa"
+ }
+]
