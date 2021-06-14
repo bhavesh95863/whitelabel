@@ -48,7 +48,7 @@ web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 
 website_context = {
     "favicon": "/assets/whitelabel/images/whitelabel_logo.png",
-    "splash_image": "/assets/whitelabel/images/learn-africapbg.png"
+    "splash_image": "/assets/whitelabel/images/whitelabel_logo.png"
 }
 after_migrate = ['whitelabel.api.whitelabel_patch']
 
