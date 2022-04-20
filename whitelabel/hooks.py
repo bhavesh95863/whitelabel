@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from . import __version__ as app_version
+from . import __logo__ as app_logo
+
 
 app_name = "whitelabel"
 app_title = "Whitelabel"
@@ -47,8 +49,8 @@ web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 # get_website_user_home_page = "whitelabel.utils.get_home_page"
 
 website_context = {
-	"favicon": "/assets/whitelabel/images/whitelabel_logo.jpg",
-	"splash_image": "/assets/whitelabel/images/whitelabel_logo.jpg"
+	"favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg",
+	"splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg"
 }
 after_migrate = ['whitelabel.api.whitelabel_patch']
 
