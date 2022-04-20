@@ -9,8 +9,6 @@ from frappe.utils import cint
 from whitelabel.api import get_frappe_version
 from frappe.installer import update_site_config
 
-
-
 class WhitelabelSetting(Document):
 	def validate(self):
 		if cint(get_frappe_version()) >= 13:
