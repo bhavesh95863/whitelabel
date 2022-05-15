@@ -20,7 +20,7 @@ def update_field_label():
 	frappe.db.sql("""Update `tabDocField` set label='ERP' where fieldname='erpnext_user' and parent='Employee'""")
 
 def get_frappe_version():
-	return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
+	return 13
 
 def update_onboard_details():
 	update_onboard_module()
