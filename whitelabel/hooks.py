@@ -123,6 +123,10 @@ boot_session = "whitelabel.api.boot_session"
 
 # before_tests = "whitelabel.install.before_tests"
 
+fixtures = [
+    {"dt": "Custom Field", "filters": [["Translation","source_text","like","%ERPNext%"]]}
+]
+
 # Overriding Methods
 # ------------------------------
 #
@@ -137,7 +141,7 @@ boot_session = "whitelabel.api.boot_session"
 # 	"Task": "whitelabel.task.get_dashboard_data"
 # }
 
-override_whitelisted_methods = {
-	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
-}
+# override_whitelisted_methods = {
+# 	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
+# }
 

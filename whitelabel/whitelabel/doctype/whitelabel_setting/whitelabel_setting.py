@@ -11,15 +11,21 @@ from frappe.installer import update_site_config
 
 class WhitelabelSetting(Document):
 	def validate(self):
-		if cint(get_frappe_version()) >= 13:
-			if self.whitelabel_app_name:
-				frappe.db.set_value("Website Settings","Website Settings","app_name",self.whitelabel_app_name)
-			else:
-				if "erpnext" in frappe.get_installed_apps():
-					frappe.db.set_value("System Settings","System Settings","app_name","ERPNext")
-				else:
-					frappe.db.set_value("System Settings","System Settings","app_name","Frappe")
+		self.set_app_name()
+		self.set_theme_attr()
+		self.set_log_notification()
+		self.set_footer()
 
+	def set_app_name(self):
+		if self.whitelabel_app_name:
+			frappe.db.set_value("Website Settings","Website Settings","app_name",self.whitelabel_app_name)
+		else:
+			if "erpnext" in frappe.get_installed_apps():
+				frappe.db.set_value("System Settings","System Settings","app_name","ERPNext")
+			else:
+				frappe.db.set_value("System Settings","System Settings","app_name","Frappe")
+		
+	def set_theme_attr(self):
 		if frappe.db.exists("DocType","Navbar Settings") and self.application_logo:
 			frappe.db.set_value("Navbar Settings","Navbar Settings","app_logo",self.application_logo)
 			frappe.db.set_value("Website Settings","Website Settings","app_logo",self.application_logo)
@@ -32,3 +38,15 @@ class WhitelabelSetting(Document):
 			self.app_logo_set = 0
 			update_site_config("app_logo_url",False)
 			frappe.clear_cache()
+	
+	def set_log_notification(self):
+		frappe.db.set_value("System Settings","System Settings","disable_system_update_notification",self.disable_new_update_popup)
+		frappe.db.set_value("System Settings","System Settings","disable_change_log_notification",self.disable_new_update_popup)
+
+	def set_footer(self):
+		frappe.db.set_value("System Settings","System Settings","email_footer_address",self.email_footer_address)
+		frappe.db.set_value("System Settings","System Settings","disable_standard_email_footer",self.disable_standard_footer)
+		frappe.db.set_value("System Settings","System Settings","hide_footer_in_auto_email_reports",self.disable_standard_footer)
+
+
+		

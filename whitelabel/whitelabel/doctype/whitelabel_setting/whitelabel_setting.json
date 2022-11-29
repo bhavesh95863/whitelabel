@@ -22,7 +22,11 @@
   "whitelabel_app_name",
   "column_break_7",
   "custom_navbar_title",
-  "custom_navbar_title_style"
+  "custom_navbar_title_style",
+  "email_footer_section",
+  "email_footer_address",
+  "column_break_21",
+  "disable_standard_footer"
  ],
  "fields": [
   {
@@ -118,11 +122,31 @@
    "fieldtype": "Check",
    "hidden": 1,
    "label": "App Logo Set"
+  },
+  {
+   "fieldname": "email_footer_section",
+   "fieldtype": "Section Break",
+   "label": "Email Footer"
+  },
+  {
+   "fieldname": "email_footer_address",
+   "fieldtype": "Small Text",
+   "label": "Email Footer Address"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_standard_footer",
+   "fieldtype": "Check",
+   "label": "Disable Standard Footer"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-04-20 11:27:44.618584",
+ "modified": "2022-11-29 10:26:40.558989",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
@@ -142,5 +166,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
