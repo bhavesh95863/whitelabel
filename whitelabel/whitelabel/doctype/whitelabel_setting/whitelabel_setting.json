@@ -112,6 +112,7 @@
    "label": "Whitelabel App Name"
   },
   {
+   "description": "Upload the logo as public so it can accessible at login page ",
    "fieldname": "application_logo",
    "fieldtype": "Attach",
    "label": "Application Logo"
@@ -146,7 +147,7 @@
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-11-29 10:26:40.558989",
+ "modified": "2022-11-29 10:40:17.629078",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
