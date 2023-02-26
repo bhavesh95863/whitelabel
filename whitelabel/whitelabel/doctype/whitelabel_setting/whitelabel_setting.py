@@ -29,12 +29,14 @@ class WhitelabelSetting(Document):
 		if frappe.db.exists("DocType","Navbar Settings") and self.application_logo:
 			frappe.db.set_value("Navbar Settings","Navbar Settings","app_logo",self.application_logo)
 			frappe.db.set_value("Website Settings","Website Settings","app_logo",self.application_logo)
+			frappe.db.set_value("Website Settings","Website Settings","splash_image",self.application_logo)
 			self.app_logo_set = 1
 			update_site_config("app_logo_url",self.application_logo)
 			frappe.clear_cache()
 		if self.app_logo_set and not self.application_logo:
 			frappe.db.set_value("Navbar Settings","Navbar Settings","app_logo","")
 			frappe.db.set_value("Website Settings","Website Settings","app_logo",self.application_logo)
+			frappe.db.set_value("Website Settings","Website Settings","splash_image",self.application_logo)
 			self.app_logo_set = 0
 			update_site_config("app_logo_url",False)
 			frappe.clear_cache()
