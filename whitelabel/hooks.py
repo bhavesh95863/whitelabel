@@ -12,7 +12,7 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "maheshwaribhavesh95863@gmail.com"
 app_license = "MIT"
-app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
+app_logo_url = "/assets/whitelabel/images/whitelabel_logo.svg"
 
 # Includes in <head>
 # ------------------
@@ -42,17 +42,17 @@ web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Role": "home_page"
 # }
 
 # Website user home page (by function)
 # get_website_user_home_page = "whitelabel.utils.get_home_page"
 
 website_context = {
-	"favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg",
-	"splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg"
+    "favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.svg",
+    "splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.svg",
 }
-after_migrate = ['whitelabel.api.whitelabel_patch']
+after_migrate = ["whitelabel.api.whitelabel_patch"]
 
 # Generators
 # ----------
@@ -93,7 +93,7 @@ after_migrate = ['whitelabel.api.whitelabel_patch']
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-#	}
+# 	}
 # }
 
 # Scheduled Tasks
@@ -138,6 +138,10 @@ boot_session = "whitelabel.api.boot_session"
 # }
 
 override_whitelisted_methods = {
-	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
+    "frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
 }
 
+
+brand_html = (
+    '<div><img  src="/assets/whitelabel/images/whitelabel_logo_long.svg"> </div>'
+)
