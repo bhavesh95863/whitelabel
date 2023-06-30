@@ -11,7 +11,7 @@ from frappe.installer import update_site_config
 
 class WhitelabelSetting(Document):
 	def validate(self):
-		if cint(get_frappe_version()) >= 13:
+		if True:
 			if self.whitelabel_app_name:
 				frappe.db.set_value("Website Settings","Website Settings","app_name",self.whitelabel_app_name)
 			else:

@@ -11,7 +11,7 @@ def whitelabel_patch():
     # update Welcome Blog Post
     if frappe.db.exists("Blog Post", "Welcome"):
         frappe.db.set_value("Blog Post", "Welcome", "content", "")
-    update_field_label()
+    update_field_label()    
 
 
 def update_field_label():
