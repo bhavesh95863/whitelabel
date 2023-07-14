@@ -39,11 +39,14 @@ def after_install():
 
 def whitelabel():
     # set deault otp issuer name
-    frappe.db.set_value("System Settings","System Settings","otp_issuer_name","OneHash")
-    # set login page app name
+    sys_setting = frappe.get_single("System Settings")
+    sys_setting.otp_issuer_name = "OneHash"
+    sys_setting.save(ignore_permissions=True)
     frappe.db.set_value("Website Settings","Website Settings","app_name","OneHash" )
     brand_name = frappe.get_hooks("brand_name")[0]
     frappe.db.set_value("Website Settings","Website Settings","app_name",brand_name )
     frappe.db.set_value("System Settings","System Settings","app_name",brand_name )
-    
+    frappe.db.set_value("Module Def","ERPNext Integrations","module_name","OneHash Integrations" ,update_modified=False)
+    frappe.db.set_value("Module Def","ERPNext Integrations","name","OneHash Integrations" ,update_modified=False)
+
     

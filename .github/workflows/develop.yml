@@ -1,0 +1,32 @@
+name: Deploy on staging
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    types: [closed]
+    branches:
+      - develop
+
+jobs:
+  build:
+    name: "Fetching and restarting admin subdomain"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Execute commands via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: 3.108.66.86
+          username: "frappe"
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            echo "Deploying to EC2"
+            cd /home/frappe/frappe-bench/apps/whitelabel
+            git add .
+            git stash
+            git pull
+            bench --site admin.onehash.store migrate
+            echo ${{secrets.EC2_PROD_PW}} | sudo -S supervisorctl restart all
+            echo ${{secrets.EC2_PROD_PW}} | sudo -S bench setup production frappe --yes
