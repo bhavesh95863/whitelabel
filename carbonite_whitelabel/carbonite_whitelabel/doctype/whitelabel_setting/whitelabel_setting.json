@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "creation": "2021-04-19 18:00:58.753514",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "carbonite_whitelabel_setting_section",
+  "ignore_onboard_carbonite_whitelabel",
+  "column_break_3",
+  "show_help_menu",
+  "column_break_5",
+  "disable_new_update_popup",
+  "logo_setting_section",
+  "application_logo",
+  "app_logo_set",
+  "column_break_2",
+  "logo_height",
+  "logo_width",
+  "navbar_setting_section",
+  "navbar_background_color",
+  "carbonite_whitelabel_app_name",
+  "column_break_7",
+  "custom_navbar_title",
+  "custom_navbar_title_style"
+ ],
+ "fields": [
+  {
+   "description": "In pixel",
+   "fieldname": "logo_height",
+   "fieldtype": "Data",
+   "label": "Logo Height"
+  },
+  {
+   "description": "In pixel",
+   "fieldname": "logo_width",
+   "fieldtype": "Data",
+   "label": "Logo Width"
+  },
+  {
+   "fieldname": "logo_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Logo Setting"
+  },
+  {
+   "fieldname": "navbar_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Navbar Setting"
+  },
+  {
+   "description": "In Hex Code",
+   "fieldname": "navbar_background_color",
+   "fieldtype": "Data",
+   "label": "Navbar Background Color"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_navbar_title",
+   "fieldtype": "Data",
+   "label": "Navbar Title"
+  },
+  {
+   "fieldname": "custom_navbar_title_style",
+   "fieldtype": "Code",
+   "label": "Navbar Title Style"
+  },
+  {
+   "fieldname": "carbonite_whitelabel_setting_section",
+   "fieldtype": "Section Break",
+   "label": "carbonite_whitelabel Setting"
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_onboard_carbonite_whitelabel",
+   "fieldtype": "Check",
+   "label": "Ignore Onboard carbonite_whitelabel"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_help_menu",
+   "fieldtype": "Check",
+   "label": "Show Help Menu"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_new_update_popup",
+   "fieldtype": "Check",
+   "label": "Disable New Update Popup"
+  },
+  {
+   "fieldname": "carbonite_whitelabel_app_name",
+   "fieldtype": "Data",
+   "label": "carbonite_whitelabel App Name"
+  },
+  {
+   "fieldname": "application_logo",
+   "fieldtype": "Attach",
+   "label": "Application Logo"
+  },
+  {
+   "default": "0",
+   "fieldname": "app_logo_set",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "App Logo Set"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-04-20 11:27:44.618584",
+ "modified_by": "Administrator",
+ "module": "carbonite_whitelabel",
+ "name": "carbonite_whitelabel Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
