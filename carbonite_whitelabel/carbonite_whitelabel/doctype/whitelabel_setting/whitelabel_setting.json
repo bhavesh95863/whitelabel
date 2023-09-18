@@ -5,8 +5,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "carbonite_whitelabel_setting_section",
-  "ignore_onboard_carbonite_whitelabel",
+  "whitelabel_setting_section",
+  "ignore_onboard_whitelabel",
   "column_break_3",
   "show_help_menu",
   "column_break_5",
@@ -19,7 +19,7 @@
   "logo_width",
   "navbar_setting_section",
   "navbar_background_color",
-  "carbonite_whitelabel_app_name",
+  "whitelabel_app_name",
   "column_break_7",
   "custom_navbar_title",
   "custom_navbar_title_style"
@@ -72,15 +72,15 @@
    "label": "Navbar Title Style"
   },
   {
-   "fieldname": "carbonite_whitelabel_setting_section",
+   "fieldname": "whitelabel_setting_section",
    "fieldtype": "Section Break",
-   "label": "carbonite_whitelabel Setting"
+   "label": "whitelabel Setting"
   },
   {
    "default": "0",
-   "fieldname": "ignore_onboard_carbonite_whitelabel",
+   "fieldname": "ignore_onboard_whitelabel",
    "fieldtype": "Check",
-   "label": "Ignore Onboard carbonite_whitelabel"
+   "label": "Ignore Onboard whitelabel"
   },
   {
    "fieldname": "column_break_3",
@@ -103,9 +103,9 @@
    "label": "Disable New Update Popup"
   },
   {
-   "fieldname": "carbonite_whitelabel_app_name",
+   "fieldname": "whitelabel_app_name",
    "fieldtype": "Data",
-   "label": "carbonite_whitelabel App Name"
+   "label": "whitelabel App Name"
   },
   {
    "fieldname": "application_logo",
@@ -124,8 +124,8 @@
  "links": [],
  "modified": "2022-04-20 11:27:44.618584",
  "modified_by": "Administrator",
- "module": "carbonite_whitelabel",
- "name": "carbonite_whitelabel Setting",
+ "module": "whitelabel",
+ "name": "whitelabel Setting",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,1 +1,1 @@
-carbonite_whitelabel
+whitelabel

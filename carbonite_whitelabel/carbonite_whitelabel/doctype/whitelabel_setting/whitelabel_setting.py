@@ -6,14 +6,14 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
 from frappe.utils import cint
-from carbonite_whitelabel.api import get_frappe_version
+from whitelabel.api import get_frappe_version
 from frappe.installer import update_site_config
 
-class carbonite_whitelabelSetting(Document):
+class whitelabelSetting(Document):
 	def validate(self):
 		if cint(get_frappe_version()) >= 13:
-			if self.carbonite_whitelabel_app_name:
-				frappe.db.set_value("Website Settings","Website Settings","app_name",self.carbonite_whitelabel_app_name)
+			if self.whitelabel_app_name:
+				frappe.db.set_value("Website Settings","Website Settings","app_name",self.whitelabel_app_name)
 			else:
 				if "erpnext" in frappe.get_installed_apps():
 					frappe.db.set_value("System Settings","System Settings","app_name","ERPNext")

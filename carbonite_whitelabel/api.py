@@ -4,14 +4,14 @@ import json
 from frappe.utils import floor, flt, today, cint
 from frappe import _
 
-def carbonite_whitelabel_patch():
+def whitelabel_patch():
 	#delete erpnext welcome page 
 	frappe.delete_doc_if_exists('Page', 'welcome-to-erpnext', force=1)
 	#update Welcome Blog Post
 	if frappe.db.exists("Blog Post", "Welcome"):
 		frappe.db.set_value("Blog Post","Welcome","content","")
 	update_field_label()
-	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('carbonite_whitelabel Setting', 'ignore_onboard_carbonite_whitelabel'):
+	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('whitelabel Setting', 'ignore_onboard_whitelabel'):
 		update_onboard_details()
 
 
@@ -47,11 +47,11 @@ def boot_session(bootinfo):
 	"""boot session - send website info if guest"""
 	if frappe.session['user']!='Guest':
 
-		bootinfo.carbonite_whitelabel_setting = frappe.get_doc("carbonite_whitelabel Setting","carbonite_whitelabel Setting")
+		bootinfo.whitelabel_setting = frappe.get_doc("whitelabel Setting","whitelabel Setting")
 
 @frappe.whitelist()
 def ignore_update_popup():
-	if not frappe.db.get_single_value('carbonite_whitelabel Setting', 'disable_new_update_popup'):
+	if not frappe.db.get_single_value('whitelabel Setting', 'disable_new_update_popup'):
 		show_update_popup_update()
 
 @frappe.whitelist()

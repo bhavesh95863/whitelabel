@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class Testcarbonite_whitelabelSetting(unittest.TestCase):
+class TestwhitelabelSetting(unittest.TestCase):
 	pass

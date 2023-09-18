@@ -4,26 +4,26 @@ from . import __version__ as app_version
 from . import __logo__ as app_logo
 
 
-app_name = "carbonite_whitelabel"
-app_title = "carbonite_whitelabel"
+app_name = "whitelabel"
+app_title = "whitelabel"
 app_publisher = "Bhavesh Maheshwari"
-app_description = "ERPNext carbonite_whitelabel"
+app_description = "ERPNext whitelabel"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "maheshwaribhavesh95863@gmail.com"
 app_license = "MIT"
-app_logo_url = '/assets/carbonite_whitelabel/images/carbonite_whitelabel_logo.jpg'
+app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/carbonite_whitelabel/css/carbonite_whitelabel_app.css"
-app_include_js = "/assets/carbonite_whitelabel/js/carbonite_whitelabel.js"
+app_include_css = "/assets/whitelabel/css/whitelabel_app.css"
+app_include_js = "/assets/whitelabel/js/whitelabel.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/carbonite_whitelabel/css/carbonite_whitelabel_web.css"
-# web_include_js = "/assets/carbonite_whitelabel/js/carbonite_whitelabel.js"
+web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
+# web_include_js = "/assets/whitelabel/js/whitelabel.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
@@ -46,13 +46,13 @@ web_include_css = "/assets/carbonite_whitelabel/css/carbonite_whitelabel_web.css
 # }
 
 # Website user home page (by function)
-# get_website_user_home_page = "carbonite_whitelabel.utils.get_home_page"
+# get_website_user_home_page = "whitelabel.utils.get_home_page"
 
 website_context = {
-	"favicon": app_logo or "/assets/carbonite_whitelabel/images/carbonite_whitelabel_logo.jpg",
-	"splash_image": app_logo or "/assets/carbonite_whitelabel/images/carbonite_whitelabel_logo.jpg"
+	"favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg",
+	"splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg"
 }
-after_migrate = ['carbonite_whitelabel.api.carbonite_whitelabel_patch']
+after_migrate = ['whitelabel.api.whitelabel_patch']
 
 # Generators
 # ----------
@@ -63,14 +63,14 @@ after_migrate = ['carbonite_whitelabel.api.carbonite_whitelabel_patch']
 # Installation
 # ------------
 
-# before_install = "carbonite_whitelabel.install.before_install"
-# after_install = "carbonite_whitelabel.install.after_install"
+# before_install = "whitelabel.install.before_install"
+# after_install = "whitelabel.install.after_install"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "carbonite_whitelabel.notifications.get_notification_config"
+# notification_config = "whitelabel.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -101,43 +101,43 @@ after_migrate = ['carbonite_whitelabel.api.carbonite_whitelabel_patch']
 
 # scheduler_events = {
 # 	"all": [
-# 		"carbonite_whitelabel.tasks.all"
+# 		"whitelabel.tasks.all"
 # 	],
 # 	"daily": [
-# 		"carbonite_whitelabel.tasks.daily"
+# 		"whitelabel.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"carbonite_whitelabel.tasks.hourly"
+# 		"whitelabel.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"carbonite_whitelabel.tasks.weekly"
+# 		"whitelabel.tasks.weekly"
 # 	]
 # 	"monthly": [
-# 		"carbonite_whitelabel.tasks.monthly"
+# 		"whitelabel.tasks.monthly"
 # 	]
 # }
 
-boot_session = "carbonite_whitelabel.api.boot_session"
+boot_session = "whitelabel.api.boot_session"
 # Testing
 # -------
 
-# before_tests = "carbonite_whitelabel.install.before_tests"
+# before_tests = "whitelabel.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "carbonite_whitelabel.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "whitelabel.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "carbonite_whitelabel.task.get_dashboard_data"
+# 	"Task": "whitelabel.task.get_dashboard_data"
 # }
 
 override_whitelisted_methods = {
-	"frappe.utils.change_log.show_update_popup": "carbonite_whitelabel.api.ignore_update_popup"
+	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
 }
 
