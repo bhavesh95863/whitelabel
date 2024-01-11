@@ -12,8 +12,10 @@
   "column_break_5",
   "disable_new_update_popup",
   "logo_setting_section",
-  "logo_height",
+  "application_logo",
+  "app_logo_set",
   "column_break_2",
+  "logo_height",
   "logo_width",
   "navbar_setting_section",
   "navbar_background_color",
@@ -104,11 +106,23 @@
    "fieldname": "whitelabel_app_name",
    "fieldtype": "Data",
    "label": "Whitelabel App Name"
+  },
+  {
+   "fieldname": "application_logo",
+   "fieldtype": "Attach",
+   "label": "Application Logo"
+  },
+  {
+   "default": "0",
+   "fieldname": "app_logo_set",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "App Logo Set"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-05-05 23:04:05.314897",
+ "modified": "2022-04-20 11:27:44.618584",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
