@@ -23,8 +23,8 @@ def update_field_label():
 
 
 def get_frappe_version():
-    # return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
-    return 13
+    return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
+    # return 13
 
 
 def update_onboard_details():
