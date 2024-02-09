@@ -5,21 +5,32 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "general_settings_tab",
   "whitelabel_setting_section",
   "ignore_onboard_whitelabel",
   "column_break_3",
   "show_help_menu",
   "column_break_5",
   "disable_new_update_popup",
+  "logo_settings_tab",
   "logo_setting_section",
-  "logo_height",
+  "application_logo",
+  "app_logo_set",
   "column_break_2",
+  "logo_height",
   "logo_width",
+  "navbar_settings_tab",
   "navbar_setting_section",
   "navbar_background_color",
+  "whitelabel_app_name",
   "column_break_7",
   "custom_navbar_title",
-  "custom_navbar_title_style"
+  "custom_navbar_title_style",
+  "email_settings_tab",
+  "email_footer_section",
+  "email_footer_address",
+  "column_break_21",
+  "disable_standard_footer"
  ],
  "fields": [
   {
@@ -36,13 +47,11 @@
   },
   {
    "fieldname": "logo_setting_section",
-   "fieldtype": "Section Break",
-   "label": "Logo Setting"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "navbar_setting_section",
-   "fieldtype": "Section Break",
-   "label": "Navbar Setting"
+   "fieldtype": "Section Break"
   },
   {
    "description": "In Hex Code",
@@ -97,12 +106,70 @@
    "default": "0",
    "fieldname": "disable_new_update_popup",
    "fieldtype": "Check",
-   "label": "Disable New Update Popup"
+   "label": "Disable System Update Notification"
+  },
+  {
+   "fieldname": "whitelabel_app_name",
+   "fieldtype": "Data",
+   "label": "Whitelabel App Name"
+  },
+  {
+   "description": "Upload the logo as public so it can accessible at login page ",
+   "fieldname": "application_logo",
+   "fieldtype": "Attach",
+   "label": "Application Logo"
+  },
+  {
+   "default": "0",
+   "fieldname": "app_logo_set",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "App Logo Set"
+  },
+  {
+   "fieldname": "email_footer_section",
+   "fieldtype": "Section Break",
+   "label": "Email Footer"
+  },
+  {
+   "fieldname": "email_footer_address",
+   "fieldtype": "Small Text",
+   "label": "Email Footer Address"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_standard_footer",
+   "fieldtype": "Check",
+   "label": "Disable Standard Footer"
+  },
+  {
+   "fieldname": "logo_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Logo Settings"
+  },
+  {
+   "fieldname": "navbar_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Navbar Settings"
+  },
+  {
+   "fieldname": "email_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Email Settings"
+  },
+  {
+   "fieldname": "general_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "General Settings"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-04-25 21:40:54.322040",
+ "modified": "2024-02-10 00:14:31.810695",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
@@ -122,5 +189,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

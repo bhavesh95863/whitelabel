@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 import frappe
 import json
 from frappe.utils import floor, flt, today, cint
-from frappe.utils.change_log import show_update_popup
+from frappe import _
 
 def whitelabel_patch():
 	#delete erpnext welcome page 
